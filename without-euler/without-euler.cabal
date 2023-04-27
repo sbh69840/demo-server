@@ -1,0 +1,30 @@
+cabal-version: 3.0
+
+name:           without-euler
+version:        0.1
+description:    Demo application using euler-hs
+homepage:       https://github.com/sbh69840/demo-server#readme
+bug-reports:    https://github.com/sbh69840/demo-server/issues
+author:         Juspay Technologies Pvt Ltd
+maintainer:     opensource@juspay.in
+copyright:      (C) Juspay Technologies Pvt Ltd
+
+source-repository head
+  type: git
+  location: https://github.com/sbh69840/demo-server
+
+executable without-euler
+  main-is: Main.hs
+  hs-source-dirs:
+      src/
+  ghc-options: -Wall -rtsopts
+  build-depends:
+      base >=4.7 && <5
+    , servant-server
+    , unordered-containers
+    , warp
+    , text
+    , aeson
+    , relude
+    , fast-logger
+  default-language: Haskell2010
