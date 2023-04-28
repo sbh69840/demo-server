@@ -1,2 +1,6 @@
+# Cabal
 dist-newstyle
+# Nix
 result
+# CPP
+server

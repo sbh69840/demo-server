@@ -28,6 +28,11 @@ nix build .#ghc8107-with-euler
 
 To build `without-euler` executable, change `with-euler` in above commands to `without-euler`. 
 
+To build `server.cpp` run 
+```
+nix develop .#cpp
+g++ -o server server.cpp -lhirdeis -lredis++
+```
 ### API call
 #### with-euler
 To allocate a huge hash map and evaluate it without logging entire hash map, run:

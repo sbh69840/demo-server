@@ -46,6 +46,10 @@
 
       perSystem = { self', pkgs, system, lib, config, ... }: {
         packages.default = self'.packages.ghc884-with-euler;
+        devShells.cpp = pkgs.mkShell {
+          nativeBuildInputs = [ pkgs.gcc ];
+          buildInputs = with pkgs; [ hiredis redis-plus-plus asio ];
+        };
       };
     };
 }
