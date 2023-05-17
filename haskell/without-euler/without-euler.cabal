@@ -2,13 +2,7 @@ cabal-version: 3.0
 
 name:           without-euler
 version:        0.1
-description:    Demo application using euler-hs
-homepage:       https://github.com/sbh69840/demo-server#readme
-bug-reports:    https://github.com/sbh69840/demo-server/issues
-
-source-repository head
-  type: git
-  location: https://github.com/sbh69840/demo-server
+description:    microbenchmark of functions within IO monad
 
 executable without-euler
   main-is: Main.hs
