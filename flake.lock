@@ -45,23 +45,6 @@
     "beam": {
       "flake": false,
       "locked": {
-        "lastModified": 1674120409,
-        "narHash": "sha256-TGyh+PqZ2UmOUAOWSUa2q+n3qhZuNSGmgykCc9Mj+Ew=",
-        "owner": "sbh69840",
-        "repo": "beam",
-        "rev": "e92f7ddf66f3ddbf9a76e25491c767eea9ca7186",
-        "type": "github"
-      },
-      "original": {
-        "owner": "sbh69840",
-        "repo": "beam",
-        "rev": "e92f7ddf66f3ddbf9a76e25491c767eea9ca7186",
-        "type": "github"
-      }
-    },
-    "beam-ghc-8-8": {
-      "flake": false,
-      "locked": {
         "lastModified": 1676828369,
         "narHash": "sha256-qCTCvYbrVJBr6dAWsvjt9cFiMiUDoh9U6L8Ykl3xtmU=",
         "owner": "srid",
@@ -79,23 +62,6 @@
     "beam-mysql": {
       "flake": false,
       "locked": {
-        "lastModified": 1676371343,
-        "narHash": "sha256-+Vgs9Kq5ijTuyATDwPw/z/yOpBGU6BPozFX7jOi4aGY=",
-        "owner": "sbh69840",
-        "repo": "beam-mysql",
-        "rev": "a5085e921c61ac45bd9cb7b44947b42160ace5ef",
-        "type": "github"
-      },
-      "original": {
-        "owner": "sbh69840",
-        "repo": "beam-mysql",
-        "rev": "a5085e921c61ac45bd9cb7b44947b42160ace5ef",
-        "type": "github"
-      }
-    },
-    "beam-mysql-ghc-8-8": {
-      "flake": false,
-      "locked": {
         "lastModified": 1604096494,
         "narHash": "sha256-+mCbshr1YSJzLrEb+JpSQaH5EODAZ0Sm8sstztKAZq0=",
         "owner": "juspay",
@@ -107,40 +73,6 @@
         "owner": "juspay",
         "repo": "beam-mysql",
         "rev": "4c876ea2eae60bf3402d6f5c1ecb60a386fe3ace",
-        "type": "github"
-      }
-    },
-    "beam-mysql_2": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1604096494,
-        "narHash": "sha256-+mCbshr1YSJzLrEb+JpSQaH5EODAZ0Sm8sstztKAZq0=",
-        "owner": "juspay",
-        "repo": "beam-mysql",
-        "rev": "4c876ea2eae60bf3402d6f5c1ecb60a386fe3ace",
-        "type": "github"
-      },
-      "original": {
-        "owner": "juspay",
-        "repo": "beam-mysql",
-        "rev": "4c876ea2eae60bf3402d6f5c1ecb60a386fe3ace",
-        "type": "github"
-      }
-    },
-    "beam_2": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1676828369,
-        "narHash": "sha256-qCTCvYbrVJBr6dAWsvjt9cFiMiUDoh9U6L8Ykl3xtmU=",
-        "owner": "srid",
-        "repo": "beam",
-        "rev": "d7031dcffafcab55850c9b3fd2561d3e279f1965",
-        "type": "github"
-      },
-      "original": {
-        "owner": "srid",
-        "ref": "ghc810",
-        "repo": "beam",
         "type": "github"
       }
     },
@@ -240,8 +172,8 @@
     },
     "euler-hs": {
       "inputs": {
-        "beam": "beam_2",
-        "beam-mysql": "beam-mysql_2",
+        "beam": "beam",
+        "beam-mysql": "beam-mysql",
         "common": "common_2",
         "flake-parts": [
           "euler-hs",
@@ -269,40 +201,6 @@
       "original": {
         "owner": "srid",
         "ref": "ghc810--nixify",
-        "repo": "euler-hs",
-        "type": "github"
-      }
-    },
-    "euler-hs-ghc-8-8": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1657781388,
-        "narHash": "sha256-ro8xTS1QmeTaFTTxW6Gw/55ZNe1vkrC5POxG+aXbq28=",
-        "owner": "juspay",
-        "repo": "euler-hs",
-        "rev": "0fdda6ef43c1a6c9c7221d7c194c278e375b9936",
-        "type": "github"
-      },
-      "original": {
-        "owner": "juspay",
-        "ref": "master",
-        "repo": "euler-hs",
-        "type": "github"
-      }
-    },
-    "euler-hs-ghc9": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1682582208,
-        "narHash": "sha256-1FXgFk3J4IwBg/5BF3wuq6e6a2puJpUaD+f7uYbMDdI=",
-        "owner": "sbh69840",
-        "repo": "euler-hs",
-        "rev": "48b8eb53a252999bfe81980d90fe30bca3c942eb",
-        "type": "github"
-      },
-      "original": {
-        "owner": "sbh69840",
-        "ref": "ghc924",
         "repo": "euler-hs",
         "type": "github"
       }
@@ -745,57 +643,6 @@
         "type": "github"
       }
     },
-    "hedis-ghc-8-8": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1598534673,
-        "narHash": "sha256-JZUSxloS/Fk2gNk3bMMBq0rjkebPols0IUxWp4gJFPc=",
-        "owner": "juspay",
-        "repo": "hedis",
-        "rev": "46ea0ea78e6d8d1a2b1a66e6f08078a37864ad80",
-        "type": "github"
-      },
-      "original": {
-        "owner": "juspay",
-        "repo": "hedis",
-        "rev": "46ea0ea78e6d8d1a2b1a66e6f08078a37864ad80",
-        "type": "github"
-      }
-    },
-    "hedis_2": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1675753683,
-        "narHash": "sha256-9M6Zlx8+hG2ea1YWwb5RDytI1EmjHS/XpozXo1f5tXI=",
-        "owner": "juspay",
-        "repo": "hedis",
-        "rev": "10e07f3242b6f522ec7b64bfbf6241fafd279978",
-        "type": "github"
-      },
-      "original": {
-        "owner": "juspay",
-        "repo": "hedis",
-        "rev": "10e07f3242b6f522ec7b64bfbf6241fafd279978",
-        "type": "github"
-      }
-    },
-    "mason": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1599726155,
-        "narHash": "sha256-+sYwUVlQwZScmnAaPVrYHPmSXxfK9shDvAywFrg/YyM=",
-        "owner": "fumieval",
-        "repo": "mason",
-        "rev": "2ad57dca476f5b5990a2753b08435581bf9a214d",
-        "type": "github"
-      },
-      "original": {
-        "owner": "fumieval",
-        "repo": "mason",
-        "rev": "2ad57dca476f5b5990a2753b08435581bf9a214d",
-        "type": "github"
-      }
-    },
     "mission-control": {
       "locked": {
         "lastModified": 1680209746,
@@ -827,23 +674,6 @@
       }
     },
     "mysql-haskell": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1594736429,
-        "narHash": "sha256-mxIaWkfyrF0FhEK2WLhyPiIiGjKlG2kUn78E+GDAGAw=",
-        "owner": "juspay",
-        "repo": "mysql-haskell",
-        "rev": "788022d65538db422b02ecc0be138b862d2e5cee",
-        "type": "github"
-      },
-      "original": {
-        "owner": "juspay",
-        "repo": "mysql-haskell",
-        "rev": "788022d65538db422b02ecc0be138b862d2e5cee",
-        "type": "github"
-      }
-    },
-    "mysql-haskell_2": {
       "flake": false,
       "locked": {
         "lastModified": 1594736429,
@@ -935,22 +765,6 @@
         "owner": "nixos",
         "ref": "nixos-21.11",
         "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "nixpkgs-ghc-8": {
-      "locked": {
-        "lastModified": 1653337737,
-        "narHash": "sha256-9oygaBLOPxtEDoCn9pi1fM1PKIZQAAq4TFCdR+hdK6o=",
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "cf5e2d510316ae0e2e78486e28b79b1fa30799fa",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "cf5e2d510316ae0e2e78486e28b79b1fa30799fa",
         "type": "github"
       }
     },
@@ -1394,26 +1208,11 @@
     },
     "root": {
       "inputs": {
-        "beam": "beam",
-        "beam-ghc-8-8": "beam-ghc-8-8",
-        "beam-mysql": "beam-mysql",
-        "beam-mysql-ghc-8-8": "beam-mysql-ghc-8-8",
         "common": "common",
         "euler-hs": "euler-hs",
-        "euler-hs-ghc-8-8": "euler-hs-ghc-8-8",
-        "euler-hs-ghc9": "euler-hs-ghc9",
         "flake-parts": "flake-parts_7",
         "haskell-flake": "haskell-flake_5",
-        "hedis": "hedis_2",
-        "hedis-ghc-8-8": "hedis-ghc-8-8",
-        "mason": "mason",
-        "mysql-haskell": "mysql-haskell_2",
-        "nixpkgs": "nixpkgs_14",
-        "nixpkgs-ghc-8": "nixpkgs-ghc-8",
-        "sequelize": "sequelize_2",
-        "sequelizeGhc9": "sequelizeGhc9",
-        "tinylog": "tinylog",
-        "word24": "word24"
+        "nixpkgs": "nixpkgs_14"
       }
     },
     "rust-overlay": {
@@ -1484,57 +1283,6 @@
         "type": "github"
       }
     },
-    "sequelizeGhc9": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1678441454,
-        "narHash": "sha256-TIQVqrP7qbNKQ54r1dky5MULlLV8TZFNl2/IrXPYYk8=",
-        "owner": "juspay",
-        "repo": "haskell-sequelize",
-        "rev": "31948e744e431320492031cfddd01e7a9896631d",
-        "type": "github"
-      },
-      "original": {
-        "owner": "juspay",
-        "repo": "haskell-sequelize",
-        "rev": "31948e744e431320492031cfddd01e7a9896631d",
-        "type": "github"
-      }
-    },
-    "sequelize_2": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1657529023,
-        "narHash": "sha256-su4fGXqcrxC1kDlomt7dqmU3HAlkcd9MYaLPyK1vXXc=",
-        "owner": "juspay",
-        "repo": "haskell-sequelize",
-        "rev": "3abc8fe10edde3fd1c9a776ede81d057dc590341",
-        "type": "github"
-      },
-      "original": {
-        "owner": "juspay",
-        "repo": "haskell-sequelize",
-        "rev": "3abc8fe10edde3fd1c9a776ede81d057dc590341",
-        "type": "github"
-      }
-    },
-    "tinylog": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1669960992,
-        "narHash": "sha256-o0WEbygbbfIYPonyY6ui1HcbaJcFdngjBhnjWbe65zs=",
-        "owner": "arjunkathuria",
-        "repo": "tinylog",
-        "rev": "08d3b6066cd2f883e183b7cd01809d1711092d33",
-        "type": "gitlab"
-      },
-      "original": {
-        "owner": "arjunkathuria",
-        "repo": "tinylog",
-        "rev": "08d3b6066cd2f883e183b7cd01809d1711092d33",
-        "type": "gitlab"
-      }
-    },
     "treefmt-nix": {
       "inputs": {
         "nixpkgs": "nixpkgs_6"
@@ -1568,23 +1316,6 @@
       "original": {
         "owner": "numtide",
         "repo": "treefmt-nix",
-        "type": "github"
-      }
-    },
-    "word24": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1647587255,
-        "narHash": "sha256-S37S10sJ45BulvpqJzlhX/J4hY7cW5jLM9nP4xAftac=",
-        "owner": "winterland1989",
-        "repo": "word24",
-        "rev": "445f791e35ddc8098f05879dbcd07c41b115cb39",
-        "type": "github"
-      },
-      "original": {
-        "owner": "winterland1989",
-        "repo": "word24",
-        "rev": "445f791e35ddc8098f05879dbcd07c41b115cb39",
         "type": "github"
       }
     }
