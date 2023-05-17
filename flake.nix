@@ -12,10 +12,12 @@
       imports = [ ./haskell ./cpp ];
 
       perSystem = { self', pkgs, system, lib, config, ... }: {
-        packages.default = self'.packages.with-euler;
-        devShells.cpp = pkgs.mkShell {
-          nativeBuildInputs = [ pkgs.gcc ];
-          buildInputs = with pkgs; [ hiredis redis-plus-plus asio ];
+        devShells.default = pkgs.mkShell {
+          inputsFrom = 
+            [
+              self'.devShells.with-cpp
+              config.haskellProjects.default.outputs.devShell
+            ];
         };
       };
     };

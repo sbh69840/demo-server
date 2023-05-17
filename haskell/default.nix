@@ -7,6 +7,7 @@
         inputs.euler-hs.haskellFlakeProjectModules.output
       ];
       basePackages = config.haskellProjects.ghc810.outputs.finalPackages;
+      autoWire = [ "packages" ];
 
       overrides = self: super: with pkgs.haskell.lib; { euler-hs = dontHaddock (dontCheck (self.callCabal2nix "euler-hs" "${inputs.euler-hs}" {})); };
       projectRoot = ./.;
